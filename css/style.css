@@ -1,0 +1,52 @@
+/* -------------------------HEADER----------------------------*/
+.header{
+  height: 93px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.wrapper-header {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  height: 93px;
+  width: 161px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe05d;
+}
+
+.header-navigation {  
+  width: 750px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-navigation__item {
+  width: 148px;
+  height: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-navigation__item a {
+  font-family: 'Proxima Nova Light';
+  color: black;
+}
+
+.header-navigation__item:hover {
+  border-bottom: 3px solid #ffe05d;
+  font-weight: bold;
+}
+
+.request-header {
+  width: 238px;
+  height: 93px;
+  background-color: #f2f2f2;
+}
