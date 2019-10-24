@@ -1,6 +1,6 @@
 /* -------------------------HEADER----------------------------*/
-.header{
-  height: 93px;
+.header {
+  /* height: 93px; */
   border-bottom: 1px solid #f2f2f2;
 }
 
@@ -9,6 +9,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header-logo {
@@ -20,13 +21,16 @@
   background-color: #ffe05d;
 }
 
-.header-navigation {  
-  width: 750px;
+.wrapper-navigation {
+  max-width: 750px;
+}
+
+.navigation {
   display: flex;
   justify-content: space-around;
 }
 
-.header-navigation__item {
+.navigation__item {
   width: 148px;
   height: 93px;
   display: flex;
@@ -35,12 +39,13 @@
   cursor: pointer;
 }
 
-.header-navigation__item a {
-  font-family: 'Proxima Nova Light';
+.navigation__item a {
+  font-family: "Proxima Nova Light", Arial, sans-serif;
   color: black;
 }
 
-.header-navigation__item:hover {
+.navigation__item:hover {
+  box-sizing: border-box;
   border-bottom: 3px solid #ffe05d;
   font-weight: bold;
 }
@@ -49,4 +54,305 @@
   width: 238px;
   height: 93px;
   background-color: #f2f2f2;
+}
+
+.request-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.request-header__phone {
+  display: flex;
+}
+
+.wrapper-icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #ffe05d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.request-header__number-phone {
+  font-family: "Akzidenz-Grotesk Pro Regular", Arial, sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.request-header__text {
+  font-family: "Proxima Nova Light", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  padding-top: 18px;
+}
+
+.request-header__text::before {
+  content: "";
+  border-bottom: 3px dotted black;
+  position: absolute;
+  bottom: 5px;
+  height: 1px;
+  width: 100%;
+}
+
+/* -------------------------MAIN----------------------------*/
+
+.wrapper-main {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.main-description {
+  margin-top: 72px;
+  font-family: "Akzidenz-Grotesk Pro Regular", Arial, sans-serif;
+  font-size: 14px;
+  color: #edcc3e;
+}
+
+.description-bank {
+  color: #b3b3b3;
+}
+
+.description-main {
+  position: relative;
+}
+
+.description-news {
+  position: relative;
+}
+
+.main-description span {
+  margin-right: 20px;
+}
+
+.description-main::before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  background-color: #b3b3b3;
+  right: -16px;
+  bottom: 5px;
+}
+
+.description-news::before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  background-color: #edcc3e;
+  right: -16px;
+  bottom: 5px;
+}
+
+.main-title {
+  font-family: "Akzidenz-Grotesk Pro Regular", Arial, sans-serif;
+  font-size: 71px;
+  margin-top: 51px;
+}
+
+.main-text {
+  font-family: "Akzidenz-Grotesk Pro Regular", Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 53px;
+}
+
+.main-second-text {
+  font-family: "Proxima Nova Light", Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 38px;
+}
+
+.wrapper-owlCarousel {
+  max-width: 1620px;
+  margin: 0 auto;
+  margin-top: 73px;
+  margin-bottom: 112px;
+}
+
+.section-decsription {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.section-decsription__text {
+  font-family: "Proxima Nova Light", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.news {
+  margin: 0 auto;
+  max-width: 1175px;
+  margin-top: 78px;
+}
+
+.wrapper-news {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item-news {
+  width: 390px;
+  height: 284px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-item-news {
+  padding-left: 40px;
+}
+
+.item-news:nth-child(1) {
+  background-image: url(../assets/img/news1.jpg);
+}
+
+.item-news:nth-child(2) {
+  background-image: url(../assets/img/news2.jpg);
+}
+
+.item-news:nth-child(3) {
+  background-image: url(../assets/img/news3.jpg);
+}
+
+.item-news__title {
+  font-family: "Akzidenz-Grotesk Pro Regular", Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+.item-news__date {
+  padding-top: 20px;
+  font-family: "Akzidenz-Grotesk Pro Regular", Arial, sans-serif;
+  font-size: 16px;
+  color: #e9cd57;
+}
+
+.all-news {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  cursor: pointer;
+  margin-bottom: 85px;
+}
+
+.all-news-text {
+  padding-left: 15px;
+  font-family: "Akzidenz-Grotesk Pro Regular", Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* -------------------------FOOTER----------------------------*/
+
+.footer {
+  border-top: 3px solid #edcc3e;
+}
+
+.wrapper-footer {
+  margin: 0 auto;
+  max-width: 1175px;
+}
+
+.wrapper-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer-copyright {
+  font-family: "Proxima Nova Light", Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.wrapper-footer-navigation {
+  width: 740px;
+}
+
+.footer-navigation {
+  margin-top: 10px;  
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__item-footer a {
+  font-family: "Proxima Nova Light", Arial, sans-serif;
+  color: black;
+}
+
+.navigation__item-footer:hover {
+  font-weight: bold;
+}
+
+.footer-company {
+  text-align: right;
+  margin-top: 36px;
+  font-family: "Proxima Nova Light", Arial, sans-serif;
+  font-size: 17px;
+  color: black;
+}
+
+.media {
+  color: #ffe05d;
+  padding: 5px;
+  background-color: black;
+  position: relative;
+  border-radius: 2px;
+}
+
+.media::before {
+  content: "";
+  border-bottom: 1px solid #ffe05d;
+
+  position: absolute;
+  bottom: 5px;
+  height: 1px;
+  width: 95px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-logo {
+    display: none;
+  }
+
+  .wrapper-news {
+    justify-content: space-around;
+  }
+
+  .item-news {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .request-header {
+    margin: 10px auto;
+  }
+
+  .wrapper-navigation {
+    margin: 0 auto;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .wrapper-footer {
+    flex-direction: column-reverse;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.wrapper-footer-navigation {
+  margin: 0 auto;
+}
 }
