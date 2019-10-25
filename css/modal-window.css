@@ -1,0 +1,138 @@
+/* -------------------------MODAL WINDOW----------------------------*/
+
+.modal-form {
+  max-width: 500px;
+  height: 670px;
+  font-family: "Akzidenz-Grotesk Pro Regular", Arial, sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  border: 2px solid #fee05c;
+  position: relative;
+  background-color: white;
+}
+
+.modal-form input {
+  display: block;Ы
+  width: 383px;
+  height: 47px;
+  margin-left: 60px;
+  border: 1px solid #d0d0d0;
+  background-color: #f5f5f5;
+  margin-bottom: 30px;
+}
+
+.form-name {
+  margin-top: 70px;
+}
+
+.number-rooms {
+  display: flex;
+  width: 285px;
+  justify-content: space-between;
+  margin-left: 60px;
+}
+
+.number-rooms-text {
+  font-weight: bold;
+}
+
+.number-rooms-figures {
+  display: flex;
+}
+
+.number-rooms-figures div {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #d0d0d0;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4px;
+  margin-left: 12px;
+}
+
+.number-rooms-figures div:hover {
+  box-sizing: border-box;
+  border: none;
+  background-color: #fee05c;
+}
+
+.form-text {
+  width: 383px;
+  height: 135px;
+  margin-left: 60px;
+  margin-top: 32px;
+  border: 1px solid #d0d0d0;
+  background-color: #f5f5f5;
+  resize: none;
+}
+
+.form-send {
+  display: block;
+  width: 383px;
+  height: 65px;
+  margin-left: 60px;
+  margin-top: 52px;
+  background-color: #fee05c;
+  border: none;
+  font-weight: bold;
+}
+
+.modal-form input::-webkit-input-placeholder {
+  padding-left: 30px;
+  font-weight: bold;
+  font-family: "Akzidenz-Grotesk Pro Regular", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.form-text::-webkit-input-placeholder {
+  padding-left: 30px;
+  padding-top: 15px;
+  font-weight: bold;
+  font-family: "Akzidenz-Grotesk Pro Regular", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.form-close {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  background-color: #fee05c;
+  top: -51px;
+  right: -51px;
+  cursor: pointer;
+}
+
+.form-close div {
+  transform: rotate(-45deg);
+  font-size: 70px;
+  font-family: Times New Roman;
+  margin-left: 27px;
+  margin-top: 3px;
+}
+
+.modal-form {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  display: none;
+  width: 500px;
+  height: 670px;
+  margin: 100px auto;
+}
+
+.filter {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: none;
+}

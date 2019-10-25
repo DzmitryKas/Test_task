@@ -21,10 +21,6 @@
   background-color: #ffe05d;
 }
 
-.wrapper-navigation {
-  max-width: 750px;
-}
-
 .navigation {
   display: flex;
   justify-content: space-around;
@@ -32,10 +28,8 @@
 
 .navigation__item {
   width: 148px;
-  height: 93px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 26px;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -54,6 +48,8 @@
   width: 238px;
   height: 93px;
   background-color: #f2f2f2;
+  border: none;
+  cursor: pointer;
 }
 
 .request-header {
@@ -95,7 +91,7 @@
   content: "";
   border-bottom: 3px dotted black;
   position: absolute;
-  bottom: 5px;
+  bottom: 2px;
   height: 1px;
   width: 100%;
 }
@@ -180,6 +176,7 @@
 .section-decsription {
   max-width: 990px;
   margin: 0 auto;
+  margin-bottom: 68px;
 }
 
 .section-decsription__text {
@@ -190,7 +187,7 @@
 .news {
   margin: 0 auto;
   max-width: 1175px;
-  margin-top: 78px;
+  padding-top: 10px;
 }
 
 .wrapper-news {
@@ -208,6 +205,10 @@
 
 .wrapper-item-news {
   padding-left: 40px;
+}
+
+.news-hidden {
+  display: none;
 }
 
 .item-news:nth-child(1) {
@@ -272,12 +273,8 @@
   margin-top: 20px;
 }
 
-.wrapper-footer-navigation {
-  width: 740px;
-}
-
 .footer-navigation {
-  margin-top: 10px;  
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -285,6 +282,7 @@
 .navigation__item-footer a {
   font-family: "Proxima Nova Light", Arial, sans-serif;
   color: black;
+  padding-left: 69px;
 }
 
 .navigation__item-footer:hover {
@@ -315,44 +313,4 @@
   bottom: 5px;
   height: 1px;
   width: 95px;
-}
-
-@media screen and (max-width: 1200px) {
-  .header-logo {
-    display: none;
-  }
-
-  .wrapper-news {
-    justify-content: space-around;
-  }
-
-  .item-news {
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 985px) {
-  .request-header {
-    margin: 10px auto;
-  }
-
-  .wrapper-navigation {
-    margin: 0 auto;
-  }
-
-  .footer-logo {
-    display: none;
-  }
-
-  .wrapper-footer {
-    flex-direction: column-reverse;
-}
-
-.footer-copyright {
-  text-align: center;
-}
-
-.wrapper-footer-navigation {
-  margin: 0 auto;
-}
 }

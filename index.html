@@ -8,43 +8,64 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
-    <link
-      rel="stylesheet"
-      href="./libs/owlCarousel/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./libs/owlCarousel/assets/owl.theme.default.css"
-    />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/modal-window.css" />
+    <link rel="stylesheet" href="./libs/dnSlide/dnSlide.css" />
   </head>
   <body>
     <header class="header">
       <div class="wrapper-header">
         <div class="header-logo">
-          <img src="./assets/img/header-logo.png" alt="" />
+          <img src="./assets/img/header-logo.png" alt="img" />
         </div>
         <nav class="wrapper-navigation">
           <ul class="navigation">
+            <input type="checkbox" name="toggle" id="menu" class="toggleMenu" />
+            <label for="menu" class="toggleMenu">
+              <img
+                src="./assets/img/header-logo.png"
+                alt="img"
+                class="img-label"/>
+              <i class="icon-menu"></i
+            ></label>
             <li class="navigation__item"><a href="#">О комплексе</a></li>
             <li class="navigation__item">
               <a href="#">Выбор квартиры</a>
             </li>
             <li class="navigation__item">
+              <input
+                type="checkbox"
+                name="toggle"
+                class="toggleSubmenu"
+                id="sub_m1"
+              />
               <a href="#">О застройщике</a>
+              <label for="sub_m1" class="toggleSubmenu"
+                ><i class="icon-angle-down"></i
+              ></label>
+              <ul class="extra_menu">
+                <li><a href="#">Пункт 1</a></li>
+                <li><a href="#">Пункт 2</a></li>
+                <li><a href="#">Пункт 3</a></li>
+              </ul>
             </li>
             <li class="navigation__item"><a href="#">Новости</a></li>
             <li class="navigation__item"><a href="#">Контакты</a></li>
+            <li>
+              <button class="request-header">
+                <div class="request-header__number-phone">
+                  +375 (29) 608-00-55
+                </div>
+                <div class="request-header__phone">
+                  <div class="wrapper-icon">
+                    <i class="icon-volume-control-phone"></i>
+                  </div>
+                  <div class="request-header__text">ЗАЯВКА</div>
+                </div>
+              </button>
+            </li>
           </ul>
         </nav>
-        <div class="request-header">
-          <div class="request-header__number-phone">+375 (29) 608-00-55</div>
-          <div class="request-header__phone">
-            <div class="wrapper-icon">
-              <i class="icon-volume-control-phone"></i>
-            </div>
-            <div class="request-header__text">ЗАЯВКА</div>
-          </div>
-        </div>
       </div>
     </header>
     <main class="main">
@@ -79,16 +100,17 @@
       </div>
     </main>
     <section class="wrapper-owlCarousel">
-      <div class="owl-carousel owl-theme">
-        <div><img src="./assets/img/carousel/1.jpg" alt="img" /></div>
-        <div><img src="./assets/img/carousel/2.jpg" alt="img" /></div>
-        <div><img src="./assets/img/carousel/3.jpg" alt="img" /></div>
-        <div><img src="./assets/img/carousel/4.jpg" alt="img" /></div>
-        <div><img src="./assets/img/carousel/5.jpg" alt="img" /></div>
-        <div><img src="./assets/img/carousel/6.jpg" alt="img" /></div>
-        <div><img src="./assets/img/carousel/7.jpg" alt="img" /></div>
-        <div><img src="./assets/img/carousel/8.jpg" alt="img" /></div>
-        <div><img src="./assets/img/carousel/9.jpg" alt="img" /></div>
+      <!-- <div class="owl-carousel owl-theme loop nonloop"> -->
+      <div class="dnSlide-main">
+        <img src="./assets/img/carousel/1.jpg" alt="img" />
+        <img src="./assets/img/carousel/2.jpg" alt="img" />
+        <img src="./assets/img/carousel/3.jpg" alt="img" />
+        <img src="./assets/img/carousel/4.jpg" alt="img" />
+        <img src="./assets/img/carousel/5.jpg" alt="img" />
+        <img src="./assets/img/carousel/6.jpg" alt="img" />
+        <img src="./assets/img/carousel/7.jpg" alt="img" />
+        <img src="./assets/img/carousel/8.jpg" alt="img" />
+        <img src="./assets/img/carousel/9.jpg" alt="img" />
       </div>
     </section>
     <section class="section-decsription">
@@ -129,43 +151,132 @@
           </div>
         </div>
       </div>
-      <div class="all-news">
-        <div class="all-news-arrow">
-          <img src="./assets/img/arrow.png" alt="" class="arrow">
+    </section>
+    <section class="news news-hidden">
+      <div class="wrapper-news">
+        <div class="item-news">
+          <div class="wrapper-item-news">
+            <h2 class="item-news__title">
+              Новый банк-партнёр с привлекательными кредитами для вас
+            </h2>
+            <div class="item-news__date">12.12.2017</div>
+          </div>
         </div>
-        <P class="all-news-text">ВСЕ НОВОСТИ</P>
+        <div class="item-news">
+          <div class="wrapper-item-news">
+            <h2 class="item-news__title">
+              Новый банк-партнёр с привлекательными кредитами для вас
+            </h2>
+            <div class="item-news__date">12.12.2017</div>
+          </div>
+        </div>
+        <div class="item-news">
+          <div class="wrapper-item-news">
+            <h2 class="item-news__title">
+              Новый банк-партнёр с привлекательными кредитами для вас
+            </h2>
+            <div class="item-news__date">12.12.2017</div>
+          </div>
+        </div>
       </div>
     </section>
+    <section class="news news-hidden">
+      <div class="wrapper-news">
+        <div class="item-news">
+          <div class="wrapper-item-news">
+            <h2 class="item-news__title">
+              Новый банк-партнёр с привлекательными кредитами для вас
+            </h2>
+            <div class="item-news__date">12.12.2017</div>
+          </div>
+        </div>
+        <div class="item-news">
+          <div class="wrapper-item-news">
+            <h2 class="item-news__title">
+              Новый банк-партнёр с привлекательными кредитами для вас
+            </h2>
+            <div class="item-news__date">12.12.2017</div>
+          </div>
+        </div>
+        <div class="item-news">
+          <div class="wrapper-item-news">
+            <h2 class="item-news__title">
+              Новый банк-партнёр с привлекательными кредитами для вас
+            </h2>
+            <div class="item-news__date">12.12.2017</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="all-news">
+      <div class="all-news-arrow">
+        <img src="./assets/img/arrow.png" alt="" class="arrow" />
+      </div>
+      <P class="all-news-text">ВСЕ НОВОСТИ</P>
+    </div>
     <footer class="footer">
       <div class="wrapper-footer">
         <div class="footer-logo-copyright">
           <div class="footer-logo">
-            <img src="./assets/img/footer-logo.png" alt="logo">
+            <img src="./assets/img/footer-logo.png" alt="logo" />
           </div>
           <div class="footer-copyright">© «Строминвест», 2017</div>
         </div>
         <div class="footer-navigation-company">
-            <nav class="wrapper-footer-navigation">
-                <ul class="footer-navigation">
-                  <li class="navigation__item-footer"><a href="#">О комплексе</a></li>
-                  <li class="navigation__item-footer">
-                    <a href="#">Выбор квартиры</a>
-                  </li>
-                  <li class="navigation__item-footer">
-                    <a href="#">О застройщике</a>
-                  </li>
-                  <li class="navigation__item-footer"><a href="#">Новости</a></li>
-                  <li class="navigation__item-footer"><a href="#">Контакты</a></li>
-                </ul>
-              </nav>
-            <div class="footer-company">
-                Разработка сайта — <span class="media">Медиа Лайн</span>
-            </div>
+          <nav class="wrapper-footer-navigation">
+            <ul class="footer-navigation">
+              <li class="navigation__item-footer">
+                <a href="#">О комплексе</a>
+              </li>
+              <li class="navigation__item-footer">
+                <a href="#">Выбор квартиры</a>
+              </li>
+              <li class="navigation__item-footer">
+                <a href="#">О застройщике</a>
+              </li>
+              <li class="navigation__item-footer"><a href="#">Новости</a></li>
+              <li class="navigation__item-footer"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="footer-company">
+            Разработка сайта — <span class="media">Медиа Лайн</span>
+          </div>
         </div>
       </div>
     </footer>
+    <div class="filter"></div>
+    <form action="" class="modal-form">
+      <input type="text" class="form-name" placeholder="ФИО" />
+      <input
+        type="text"
+        class="form-number-phone"
+        placeholder="Номер телефона"
+      />
+      <input type="text" class="form-email" placeholder="E-mail" />
+      <div class="number-rooms">
+        <p class="number-rooms-text">Количество комнат</p>
+        <div class="number-rooms-figures">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+      </div>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        class="form-text"
+        placeholder="Текст"
+      ></textarea>
+      <button class="form-send">Отправить</button>
+      <div class="form-close">
+        <div>&times</div>
+      </div>
+    </form>
     <script src="libs/JQ/jquery-3.4.1.min.js"></script>
-    <script src="libs/owlCarousel/owl.carousel.min.js"></script>
+    <script src="./libs/dnSlide/dnSlide.js"></script>
+    <script src="./libs/dnSlide/expandJS.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

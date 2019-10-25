@@ -1,31 +1,36 @@
 @font-face {
-  font-family: 'Proxima Nova Light';
-  src: url('../assets/fonts/ProximaNova/ProximaNova-Light.eot');
-  src: url('../assets/fonts/ProximaNova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
-  url('../assets/fonts/ProximaNova/ProximaNova-Light.woff') format('woff'),
-  url('../assets/fonts/ProximaNova/ProximaNova-Light.ttf') format('truetype');
+  font-family: "Proxima Nova Light";
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Light.eot");
+  src: url("../assets/fonts/ProximaNova/ProximaNova-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/ProximaNova/ProximaNova-Light.woff") format("woff"),
+    url("../assets/fonts/ProximaNova/ProximaNova-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  }
-
-  @font-face {
-font-family: 'Akzidenz-Grotesk Pro Regular';
-src: url('../assets/fonts/AkzidenzGroteskPro/AkzidenzGroteskPro-Regular.eot');
-src: url('../assets/fonts/AkzidenzGroteskPro/AkzidenzGroteskPro-Regular.eot?#iefix') format('embedded-opentype'),
-url('../assets/fonts/AkzidenzGroteskPro/AkzidenzGroteskPro-Regular.woff') format('woff'),
-url('../assets/fonts/AkzidenzGroteskPro/AkzidenzGroteskPro-Regular.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
 }
 
 @font-face {
-  font-family: 'fontello';
-  src: url('../assets/icon/font/fontello.eot?26643831');
-  src: url('../assets/icon/font/fontello.eot?26643831#iefix') format('embedded-opentype'),
-       url('../assets/icon/font/fontello.woff2?26643831') format('woff2'),
-       url('../assets/icon/font/fontello.woff?26643831') format('woff'),
-       url('../assets/icon/font/fontello.ttf?26643831') format('truetype'),
-       url('../assets/icon/font/fontello.svg?26643831#fontello') format('svg');
+  font-family: "Akzidenz-Grotesk Pro Regular";
+  src: url("../assets/fonts/AkzidenzGroteskPro/AkzidenzGroteskPro-Regular.eot");
+  src: url("../assets/fonts/AkzidenzGroteskPro/AkzidenzGroteskPro-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/AkzidenzGroteskPro/AkzidenzGroteskPro-Regular.woff")
+      format("woff"),
+    url("../assets/fonts/AkzidenzGroteskPro/AkzidenzGroteskPro-Regular.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "fontello";
+  src: url("../assets/icon/font/fontello.eot?26643831");
+  src: url("../assets/icon/font/fontello.eot?26643831#iefix")
+      format("embedded-opentype"),
+    url("../assets/icon/font/fontello.woff2?26643831") format("woff2"),
+    url("../assets/icon/font/fontello.woff?26643831") format("woff"),
+    url("../assets/icon/font/fontello.ttf?26643831") format("truetype"),
+    url("../assets/icon/font/fontello.svg?26643831#fontello") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -35,47 +40,63 @@ font-style: normal;
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?26643831#fontello') format('svg');
+    src: url('../font/fontello.svg?63206722#fontello') format('svg');
   }
 }
 */
- 
- [class^="icon-"]:before, [class*=" icon-"]:before {
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
- 
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
- 
+  margin-left: 0.2em;
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
-.icon-volume-control-phone:before { 
-  content: '\f2a0'; 
+
+.icon-cancel:before {
+  content: "\e800";
+} /* '' */
+.icon-mobile:before {
+  content: "\e804";
+} /* '' */
+.icon-menu:before {
+  content: "\f0c9";
+  font-size: 40px;
+} /* '' */
+.icon-angle-up:before {
+  content: "\f106";
+} /* '' */
+.icon-angle-down:before {
+  content: "\f107";
+} /* '' */
+.icon-volume-control-phone:before {
+  content: "\f2a0";
   font-size: 20px;
 } /* '' */
