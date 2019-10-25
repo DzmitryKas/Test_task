@@ -26,20 +26,19 @@ buttonNews.addEventListener("click", () => {
   showNews();
 });
 
-$(function() {
-  $(".dnSlide-main").dnSlide();
-});
-
-$(".dnSlide-main").dnSlide({
-  isOddShow: false,
-  width: 1300,
-  height: 234,
-  dnSlideFirstWidth: 600,
-  dnSlideFirstHeight: 234,
-  autoPlay: false,
-  delay: 5000,
-  scale: 0.9,
-  speed: 500,
-  verticalAlign: "middle", // or 'bottom', 'top'
-  afterClickBtnFn: null
-});
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:2
+      },
+      1000:{
+          items:3
+      }
+  }
+}) 
