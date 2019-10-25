@@ -32,7 +32,7 @@ $(function() {
 
 $(".dnSlide-main").dnSlide({
   isOddShow: false,
-  width: 800,
+  width: 1300,
   height: 234,
   dnSlideFirstWidth: 600,
   dnSlideFirstHeight: 234,

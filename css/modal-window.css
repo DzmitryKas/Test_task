@@ -1,7 +1,7 @@
 /* -------------------------MODAL WINDOW----------------------------*/
 
 .modal-form {
-  max-width: 500px;
+  width: 500px;
   height: 670px;
   font-family: "Akzidenz-Grotesk Pro Regular", Arial, sans-serif;
   font-size: 16px;
@@ -12,7 +12,7 @@
 }
 
 .modal-form input {
-  display: block;Ы
+  display: block;
   width: 383px;
   height: 47px;
   margin-left: 60px;
